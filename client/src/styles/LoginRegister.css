@@ -1,0 +1,94 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #fdf6f0, #e0f7fa); /* pastel soft gradient */
+  font-family: "Poppins", sans-serif;
+}
+
+.auth-card {
+  background: #ffffff;
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.auth-card:hover {
+  transform: translateY(-2px);
+}
+
+.auth-card h2 {
+  margin-bottom: 1.2rem;
+  color: #333;
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-card input {
+  margin: 0.6rem 0;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.auth-card input:focus {
+  border-color: #a8dadc; /* soft pastel focus */
+  outline: none;
+}
+
+.auth-card button {
+  margin-top: 1rem;
+  background: #a8dadc; /* pastel button */
+  color: #333;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.auth-card button:hover {
+  background: #89c2d9; /* slightly darker pastel on hover */
+}
+
+.switch-text {
+  margin-top: 1rem;
+  color: #555;
+}
+
+.switch-text span {
+  color: #a8dadc;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.auth-message {
+  margin-top: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.logout-btn {
+  margin-top: 1rem;
+  background: #ffb3b3; /* soft pastel red for logout */
+  color: #333;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.logout-btn:hover {
+  background: #ff9999;
+}

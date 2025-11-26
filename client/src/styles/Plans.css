@@ -1,0 +1,85 @@
+.plans-wrapper {
+  width: 70%; /* show a partial next/prev card */
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+
+.plans-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 20px; /* spacing between cards */
+}
+
+.plans-page h2 {
+  color: #064e4e; /* dark teal */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.plan-card {
+  background-color: #ffffff;
+  color: #0f766e;
+  border-radius: 25px;
+  padding: 40px 30px;
+  min-width: 60%; /* show a portion of next/prev */
+  box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+  text-align: left;
+  border: 2px solid transparent;
+  transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+  flex-shrink: 0;
+  opacity: 0.7;
+  transform: scale(0.9);
+}
+
+.plan-card.active {
+  transform: scale(1);
+  opacity: 1;
+  border: 2px solid #10b981;
+  box-shadow: 0 18px 35px rgba(0,0,0,0.25);
+}
+
+.switch-btn {
+  background-color: #0f766e;
+  color: #fff;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 12px;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.switch-btn:hover {
+  background-color: #145e5e;
+  transform: translateY(-50%) scale(1.05);
+}
+
+.switch-btn:first-of-type {
+  left: 0px; /* position left arrow */
+}
+
+.switch-btn:last-of-type {
+  right: 0px; /* position right arrow */
+}
+
+.plan-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 40px;
+}
+
+.plans-page {
+  background: linear-gradient(90deg, #e0f7fa, #ffffff); /* light cyan → white */
+  min-height: 100vh;
+  padding: 60px 20px;
+  text-align: center;
+}

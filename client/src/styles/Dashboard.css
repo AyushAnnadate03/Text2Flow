@@ -1,0 +1,59 @@
+.dashboard-page {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(90deg, #e0f7fa, #ffffff);
+  min-height: 100vh;
+  padding: 60px 40px;
+  text-align: center;
+  color: #0f766e;
+}
+
+.diagram-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.flowchart-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.flowchart-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.flowchart-card h3 {
+  margin-bottom: 10px;
+  color: #0f766e;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.card-buttons button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 12px;
+  background: #0f766e;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.card-buttons button:hover {
+  background: #10b981;
+}
+
+.no-diagrams {
+  margin-top: 40px;
+  font-size: 1rem;
+  color: #145e5e;
+}

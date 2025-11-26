@@ -1,0 +1,133 @@
+/* About.css - Light Theme */
+
+/* General Page Styles */
+.about-page {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(90deg, #e0f7fa, #ffffff); /* light cyan → white */
+  color: #0f766e; /* dark teal text */
+  min-height: 100vh;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 80px 20px 60px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #0f766e; /* heading color */
+}
+
+.hero p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: white; /* slightly darker text */
+}
+
+/* Mission & Vision Section */
+.mission-vision {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 60px 0;
+}
+
+.card {
+  background-color: #ffffff;
+  color: #0f766e;
+  border-radius: 20px;
+  padding: 40px 30px;
+  flex: 1 1 300px;
+  max-width: 400px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+/* What We Offer Section */
+.offer-section {
+  max-width: 1000px;
+  margin: 0 auto 80px;
+  text-align: center;
+}
+
+.offer-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #0f766e;
+}
+
+.offer-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.offer-card {
+  background-color: #ffffff;
+  color: #0f766e;
+  border-radius: 20px;
+  padding: 30px 20px;
+  flex: 1 1 250px;
+  max-width: 300px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.offer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
+.offer-card h3 {
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+
+.offer-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #145e5e;
+}
+
+.icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #0f766e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mission-vision,
+  .offer-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .card,
+  .offer-card {
+    max-width: 90%;
+  }
+}

@@ -1,0 +1,102 @@
+.editor-page {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 20px;
+  padding: 20px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.editor-card,
+.preview-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.editor-title,
+.preview-title {
+  margin-bottom: 16px;
+  font-size: 20px;
+  color: #2a3f5f;
+}
+
+.editor-label {
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #444;
+}
+
+.editor-textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  font-family: monospace;
+  margin-bottom: 10px;
+}
+
+.editor-btn-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.base-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+  min-width: 150px;
+  text-align: center;
+}
+
+.editor-btn {
+  background: #166f65ff;
+  color: white;
+  border: none;
+}
+.editor-btn:hover {
+  background: #117c8fff;
+}
+
+.ai-btn {
+  background-color: #124580ff;
+  color: white;
+  border: none;
+}
+.ai-btn:hover {
+  background-color: #5a5fb2ff;
+}
+
+.download-btn {
+  background-color: #08827aff;
+  color: white;
+  border: none;
+}
+.download-btn:hover {
+  background-color: #0667b0;
+}
+
+.preview-placeholder {
+  color: #777;
+  font-style: italic;
+}
+
+.preview-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.preview-card .reactflow-wrapper {
+  flex: 1;
+  min-height: 500px;
+}

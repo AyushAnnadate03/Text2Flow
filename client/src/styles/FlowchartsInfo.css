@@ -1,0 +1,124 @@
+/* FlowchartsInfo.css - Light Theme with colored icons */
+
+.flowcharts-info-page {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(90deg, #e0f7fa, #ffffff);
+  color: #0f766e;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* Hero Section */
+.hero {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #145e5e;
+}
+
+/* Sections */
+.section {
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.section h3 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  color: #0f766e;
+}
+
+.section p,
+.section ul {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #145e5e;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+/* Flowchart Shapes Cards */
+.shapes-section {
+  max-width: 1000px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.shapes-section h3 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+/* Cards Container */
+.shapes-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Individual Card */
+.shape-card {
+  background-color: #ffffff;
+  color: #0f766e;
+  border-radius: 20px;
+  padding: 30px 20px;
+  flex: 1 1 200px;
+  max-width: 250px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.shape-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
+.shape-card h4 {
+  font-size: 1.3rem;
+  margin: 15px 0;
+}
+
+.shape-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #145e5e;
+}
+
+/* Colored Icons */
+.shape-card:nth-child(1) .icon { color: #0f766e; }  /* Process - dark teal */
+.shape-card:nth-child(2) .icon { color: #f59e0b; }  /* Decision - amber */
+.shape-card:nth-child(3) .icon { color: #10b981; }  /* Connector - green */
+.shape-card:nth-child(4) .icon { color: #3b82f6; }  /* Input/Output - blue */
+.shape-card:nth-child(5) .icon { color: #ef4444; }  /* Start/End - red */
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .shapes-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+}
